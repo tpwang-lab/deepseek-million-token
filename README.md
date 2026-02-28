@@ -28,7 +28,7 @@ Taken together, these findings illustrate that the million token window is not m
 ### Visualizing the Three Core Discoveries
 
 **1. The 28.8% Hidden Cost & Cognitive Emergence**
-![Fig 1: Token Cost Gap](./Token%20Cost%20Gap.png)
+![03_token_cost_diff.png](./03_token_cost_diff.png)
 *Fig 1: Actual resource consumption exceeds estimates by 28.8%.*
 
 ![Fig 2: Info Density](./Info%20Density.png)
