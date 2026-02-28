@@ -543,6 +543,7 @@ Lesson	Why it matters
 ❗ Avoid “dense attention” on huge PDFs without chunking. The sparse attention mechanism can skip pages, mistaking them for blanks. Split PDFs into ≤ 10 page pieces and prepend a “process every page” instruction.
 
 ❗ Never rely on a single OCR pipeline for handwritten material. Combine a quick visual extract (e.g., WeChat) with the model’s own inference, and always validate manually.
+
 ❗ When the model’s output feels “over polished,” re enable the “Deep Think” toggle or ask for a “concise list” to force raw reasoning.
 
 ❗ Terminate any self reinforcing suggestion loop after two unsuccessful iterations. Issue a “reset focus” prompt and re state the original objective.
