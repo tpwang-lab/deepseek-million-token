@@ -11,21 +11,25 @@ pinned: false
 
 Abstract
 
-Large language models have traditionally been limited to context windows of a few tens of kilobytes, forcing users to truncate or repeatedly resubmit information. The recent release of DeepSeek’s million token context window makes it possible to keep an entire interdisciplinary research project in a single, searchable dialogue. In this paper we report three original contributions that become visible only when a model can retain that amount of information:
-	Hidden cost token gap. By contrasting a simple coefficient based token estimate with the official OpenAI compatible tokenizer we discover a systematic 28.8 % overhead (≈ 0.34 M tokens) that the model spends on internal reasoning, candidate generation, and sparse attention bookkeeping. This “hidden cost gap” quantifies the real computational budget required for long range reasoning.
-	Full stack engineering workflow for non AI specialists. Starting from raw handwritten multilingual manuscripts, we describe a reproducible pipeline—data cleaning, PostgreSQL + pgvector set up, Dockerised GPU inference, vector based retrieval, and a metacognitive annotation layer—all orchestrated inside a single million token conversation. The pipeline demonstrates that a researcher with a background in biomedicine, psychology and the humanities can build, run and iterate on a sophisticated AI augmented system without any prior software engineering training.
-	Emergent collaborative cognition. When the long range context is fully exploited, the model transitions from a “high density answer engine” to a cognitive partner: it reliably summarises the entire project history, retrieves arbitrary passages on demand, and even adopts the user’s divergent, high level reasoning style. This behaviour—absent in 128 k token windows—shows that a million token context can turn an LLM from a tool into a symbiotic collaborator.
-Taken together, these findings illustrate that the million token window is not merely a larger “backpack” for tokens, but a space for sustained, continuous thinking that reshapes both the engineering workflow and the human machine relationship.
+Large language models have traditionally been limited to context windows of a few tens of kilobytes, forcing users to truncate or repeatedly resubmit information. The recent release of DeepSeek’s million token context window （reached _1.5 million plus tokens_ at the close of the dialogue window）makes it possible to keep an entire interdisciplinary research project in a single, searchable dialogue (free of charge through browser access to the model). In this paper we report several original contributions that become visible only when a model can retain that amount of information:
+	
+1. Hidden cost token gap. By contrasting a simple coefficient based token estimate with the official OpenAI compatible tokenizer we discover a systematic 28.8 % overhead (≈ 0.34 M tokens) that the model spends on internal reasoning, candidate generation, and sparse attention bookkeeping. This “hidden cost gap” quantifies the real computational budget required for long range reasoning.
+
+2. Full stack engineering workflow for non AI specialists. Starting from raw handwritten multilingual manuscripts, we describe a reproducible pipeline—data cleaning, PostgreSQL + pgvector set up, Dockerised GPU inference, vector based retrieval, and a metacognitive annotation layer—all orchestrated inside a single million token conversation. The pipeline demonstrates that a researcher with a background in biomedicine, psychology and the humanities can build, run and iterate on a sophisticated AI augmented system without any prior software engineering training.
+
+3. Emergent collaborative cognition. When the long range context is fully exploited, the model transitions from a “high density answer engine” to a cognitive partner: it reliably summarises the entire project history, retrieves arbitrary passages on demand, and even adopts the user’s divergent, high level reasoning style. This behaviour—absent in 128 k token windows—shows that a million token context can turn an LLM from a tool into a symbiotic collaborator.
+
+Taken together with others discussed in the paper, these findings illustrate that the million token window is not merely a larger “backpack” for tokens, but a space for sustained, continuous thinking that reshapes both the engineering workflow and the human machine relationship.
 
 ## 📊 Data Overview & Core Findings
 
-### Raw Statistics
+### Raw Statistics 
 ![Million_token_windows_statistics.png](./Million_token_windows_statistics.png)
 > *Table 1: Comprehensive statistics across DOCX, HTML, and TXT formats.*
 
 ---
 
-### Visualizing the Three Core Discoveries
+### Visualizing the Three Five Discoveries
 
 **1. The 28.8% Hidden Cost & Cognitive Emergence**
 ![en_03_token_cost_diff.png](./en_03_token_cost_diff.png)
