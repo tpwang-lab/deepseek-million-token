@@ -20,7 +20,7 @@ Taken together, these findings illustrate that the million token window is not m
 ## 📊 Data Overview & Core Findings
 
 ### Raw Statistics
-![Table 1: Comprehensive Statistics](./Table_5.png)
+![Million_token_windows_statistics.png](./Million_token_windows_statistics.png)
 > *Table 1: Comprehensive statistics across DOCX, HTML, and TXT formats.*
 
 ---
