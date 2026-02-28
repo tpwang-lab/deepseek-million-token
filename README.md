@@ -17,54 +17,34 @@ Large language models have traditionally been limited to context windows of a fe
 	Emergent collaborative cognition. When the long range context is fully exploited, the model transitions from a “high density answer engine” to a cognitive partner: it reliably summarises the entire project history, retrieves arbitrary passages on demand, and even adopts the user’s divergent, high level reasoning style. This behaviour—absent in 128 k token windows—shows that a million token context can turn an LLM from a tool into a symbiotic collaborator.
 Taken together, these findings illustrate that the million token window is not merely a larger “backpack” for tokens, but a space for sustained, continuous thinking that reshapes both the engineering workflow and the human machine relationship.
 
-![Million_token_windows_statistics](./Million_token_windows_statistics.png)
-Deepseek's Million_token_Windows_statistics
+## 📊 Data Overview & Core Findings
 
-<h3 align="center">📊 Visualizing the Five Core Dimensions</h3>
-<p align="center" style="color: #666; margin-bottom: 25px;">
-  <i>Top: Quantitative Insights (Depth) | Bottom: Structural Distribution (Breadth)</i>
-</p>
+### Raw Statistics
+![Table 1: Comprehensive Statistics](./Table_5.png)
+> *Table 1: Comprehensive statistics across DOCX, HTML, and TXT formats.*
 
-<!-- Row 1: Two Core Depth Charts (Wide) -->
-<table align="center" style="width: 100%; max-width: 900px; border-collapse: collapse;">
-  <tr>
-    <td align="center" width="50%" style="padding: 10px; border: none;">
-      <img src="./en_03_token_cost_diff.png" alt="Token Cost Gap" style="width: 100%; max-width: 400px; border-radius: 8px;">
-      <br>
-      <small style="color: #333;"><b>Fig 1:</b> 28.8% Hidden Cost</small>
-    </td>
-    <td align="center" width="50%" style="padding: 10px; border: none;">
-      <img src="./en_05_info_density.png" alt="Info Density" style="width: 100%; max-width: 400px; border-radius: 8px;">
-      <br>
-      <small style="color: #333;"><b>Fig 2:</b> Cognitive Emergence</small>
-    </td>
-  </tr>
+---
 
-  <!-- Row 2: Two Full Pie Charts (Medium) -->
-  <tr>
-    <td align="center" width="50%" style="padding: 15px; border: none;">
-      <img src="./en_01_noise_ratio.png" alt="Noise Ratio" style="width: 100%; max-width: 300px; border-radius: 8px;">
-      <br>
-      <small style="color: #333;"><b>Fig 3:</b> 97% Noise Ratio</small>
-    </td>
-    <td align="center" width="50%" style="padding: 15px; border: none;">
-      <img src="./en_04_workload_dist.png" alt="Workload Rule" style="width: 100%; max-width: 300px; border-radius: 8px;">
-      <br>
-      <small style="color: #333;"><b>Fig 4:</b> 60/40 Workload Rule</small>
-    </td>
-  </tr>
-</table>
+### Visualizing the Three Core Discoveries
 
-<!-- Row 3: The Small Multilingual Chart (Centered & Enlarged) -->
-<div align="center" style="margin-top: 10px; margin-bottom: 25px; padding: 10px;">
-  <img src="./en_02_multilingual_dist.png" alt="Multilingual Mix" style="max-width: 350px; border-radius: 8px;">
-  <br>
-  <small style="color: #333;"><b>Fig 5:</b> Multilingual Mix</small>
-</div>
+**1. The 28.8% Hidden Cost & Cognitive Emergence**
+![Fig 1: Token Cost Gap](./Token%20Cost%20Gap.png)
+*Fig 1: Actual resource consumption exceeds estimates by 28.8%.*
 
-<p align="center" style="color: #555; font-style: italic; margin-top: 15px;">
-  These visualizations summarize the key empirical findings detailed in the Abstract and Table 1.
-</p>
+![Fig 2: Info Density](./Info%20Density.png)
+*Fig 2: Cognitive emergence curve showing information density changes.*
+
+**2. Structural Distribution (Noise, Workload, Language)**
+![Fig 3: Noise Ratio](./Noise%20Ratio.png)
+*Fig 3: 97% of raw web data is noise.*
+
+![Fig 4: Workload Rule](./Workload%20Rule.png)
+*Fig 4: The 60/40 rule of solo research workload.*
+
+![Fig 5: Multilingual Mix](./Multilingual%20Mix.png)
+*Fig 5: Real-world academic data is a mix of Chinese, English, and Others.*
+
+> *These visualizations summarize the key empirical findings detailed in the Abstract.*
 
 Introduction
 
