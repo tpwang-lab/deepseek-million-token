@@ -28,20 +28,20 @@ Taken together, these findings illustrate that the million token window is not m
 ### Visualizing the Three Core Discoveries
 
 **1. The 28.8% Hidden Cost & Cognitive Emergence**
-![03_token_cost_diff.png](./03_token_cost_diff.png)
+![en_03_token_cost_diff.png](./en_03_token_cost_diff.png)
 *Fig 1: Actual resource consumption exceeds estimates by 28.8%.*
 
-![Fig 2: Info Density](./Info%20Density.png)
+![en_05_info_density.png](./en_05_info_density.png)
 *Fig 2: Cognitive emergence curve showing information density changes.*
 
 **2. Structural Distribution (Noise, Workload, Language)**
-![Fig 3: Noise Ratio](./Noise%20Ratio.png)
+![en_01_noise_ratio.png](./en_01_noise_ratio.png)
 *Fig 3: 97% of raw web data is noise.*
 
-![Fig 4: Workload Rule](./Workload%20Rule.png)
+![en_04_workload_dist.png](./en_04_workload_dist.png)
 *Fig 4: The 60/40 rule of solo research workload.*
 
-![Fig 5: Multilingual Mix](./Multilingual%20Mix.png)
+![en_02_multilingual_dist.png](./en_02_multilingual_dist.png)
 *Fig 5: Real-world academic data is a mix of Chinese, English, and Others.*
 
 > *These visualizations summarize the key empirical findings detailed in the Abstract.*
