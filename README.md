@@ -11,7 +11,7 @@ pinned: false
 
 Abstract
 
-Large language models have traditionally been limited to context windows of a few tens of kilobytes, forcing users to truncate or repeatedly resubmit information. The recent release of DeepSeek’s million token context window （reached _1.5 million plus tokens_ at the close of the dialogue window）makes it possible to keep an entire interdisciplinary research project in a single, searchable dialogue (free of charge through browser access to the model). In this paper we report several original contributions that become visible only when a model can retain that amount of information:
+Large language models have traditionally been limited to context windows of a few tens of kilobytes, forcing users to truncate or repeatedly resubmit information. The recent release of DeepSeek’s million token context window （reached __1.5 million plus tokens__ at the close of the dialogue window）makes it possible to keep an entire interdisciplinary research project in a single, searchable dialogue (free of charge through browser access to the model). In this paper we report several original contributions that become visible only when a model can retain that amount of information:
 	
 1. Hidden cost token gap. By contrasting a simple coefficient based token estimate with the official OpenAI compatible tokenizer we discover a systematic 28.8 % overhead (≈ 0.34 M tokens) that the model spends on internal reasoning, candidate generation, and sparse attention bookkeeping. This “hidden cost gap” quantifies the real computational budget required for long range reasoning.
 
