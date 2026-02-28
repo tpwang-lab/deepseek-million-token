@@ -535,11 +535,16 @@ Lesson	Why it matters
 6	Document every change. Because the model can recall any line of the transcript, a concise changelog (e.g., “ 2024 02 25 – Added Docker GPU support”) becomes instantly searchable and reusable.	Turns the conversation into a living knowledge base rather than a linear diary.
 
 ### 8.3 Pitfall Avoidance Checklist
+
 ❗ Do not launch a Docker container before verifying GPU visibility. The model will silently fall back to CPU, leading to a 20 × slowdown.
+
 ❗ Never assume the default encoding is correct. On Windows, GBK → UTF 8 mismatches produced the 0xd6 error; always enforce client_encoding=utf8 in the DSN.
+
 ❗ Avoid “dense attention” on huge PDFs without chunking. The sparse attention mechanism can skip pages, mistaking them for blanks. Split PDFs into ≤ 10 page pieces and prepend a “process every page” instruction.
+
 ❗ Never rely on a single OCR pipeline for handwritten material. Combine a quick visual extract (e.g., WeChat) with the model’s own inference, and always validate manually.
 ❗ When the model’s output feels “over polished,” re enable the “Deep Think” toggle or ask for a “concise list” to force raw reasoning.
+
 ❗ Terminate any self reinforcing suggestion loop after two unsuccessful iterations. Issue a “reset focus” prompt and re state the original objective.
 
 ### 8.4 Conclusion
