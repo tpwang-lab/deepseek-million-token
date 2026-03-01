@@ -576,14 +576,19 @@ Document habitually – Treat every prompt, correction, and resolution as a perm
 
 ### 8.7 Future Work
 
-Cross model hidden cost benchmarking – Replicate the 28.8 % overhead analysis on other large models (e.g., GPT 4 Turbo, Claude 3, LLaMA 2 70B). By standardising the token gap measurement (coefficient vs. tiktoken) we will build a comparative table of effective context budgets across architectures and sparsity settings.
-Dense attention mode – Implement a switch that disables DeepSeek’s sparse attention algorithm for tasks that demand “absolute certainty” (e.g., legal text transcription). Bench mark latency, memory consumption and recall accuracy against the default sparse mode.
-Automatic loop detection & interruption – Develop a lightweight monitor that watches the model’s token stream for repeated “suggest solution then fail” patterns (e.g., ≥ 3 consecutive proposals with the same failure keyword). When a loop is detected the system automatically injects a “reset focus” prompt or alerts the user.
-General purpose data cleaning library – Package the Notepad++ style preprocessing steps (UTF 8 normalisation, BOM stripping, footnote relocation) into an open source Python module (clean_text) that can be pip installed and invoked from the command line. This would make the 97 % noise reduction reproducible for any downstream project.
+1 Cross model hidden cost benchmarking – Replicate the 28.8 % overhead analysis on other large models (e.g., GPT 4 Turbo, Claude 3, LLaMA 2 70B). By standardising the token gap measurement (coefficient vs. tiktoken) we will build a comparative table of effective context budgets across architectures and sparsity settings.
 
-Multilingual retrieval evaluation – Construct a benchmark suite that measures recall/precision for Chinese English mixed queries across the two vector libraries (BGE large zh v1.5 and BGE M3). The suite will quantify the information density uplift we observed in the “Problem Outbreak” phase.
-User interface mode toggles – Prototype a lightweight Chrome extension (or a wrapper CLI) that lets the user pin a response style (“list mode”, “narrative mode”) and an attention mode (“sparse”, “dense”). Formal user studies will assess whether explicit toggles reduce style drift and improve perceived stability.
-Reproducibility package & community hub – Publish a full Docker Compose stack (PostgreSQL + pgvector, vectorisation services, and a small Flask UI) together with the PowerShell/Python token analysis scripts. Create a GitHub issue template for users to submit their own “window gap” measurements, fostering a community driven dataset of long range context performance.
+2 Dense attention mode – Implement a switch that disables DeepSeek’s sparse attention algorithm for tasks that demand “absolute certainty” (e.g., legal text transcription). Bench mark latency, memory consumption and recall accuracy against the default sparse mode.
+
+3 Automatic loop detection & interruption – Develop a lightweight monitor that watches the model’s token stream for repeated “suggest solution then fail” patterns (e.g., ≥ 3 consecutive proposals with the same failure keyword). When a loop is detected the system automatically injects a “reset focus” prompt or alerts the user.
+
+4 General purpose data cleaning library – Package the Notepad++ style preprocessing steps (UTF 8 normalisation, BOM stripping, footnote relocation) into an open source Python module (clean_text) that can be pip installed and invoked from the command line. This would make the 97 % noise reduction reproducible for any downstream project.
+
+5 Multilingual retrieval evaluation – Construct a benchmark suite that measures recall/precision for Chinese English mixed queries across the two vector libraries (BGE large zh v1.5 and BGE M3). The suite will quantify the information density uplift we observed in the “Problem Outbreak” phase.
+
+6 User interface mode toggles – Prototype a lightweight Chrome extension (or a wrapper CLI) that lets the user pin a response style (“list mode”, “narrative mode”) and an attention mode (“sparse”, “dense”). Formal user studies will assess whether explicit toggles reduce style drift and improve perceived stability.
+
+7 Reproducibility package & community hub – Publish a full Docker Compose stack (PostgreSQL + pgvector, vectorisation services, and a small Flask UI) together with the PowerShell/Python token analysis scripts. Create a GitHub issue template for users to submit their own “window gap” measurements, fostering a community driven dataset of long range context performance.
 
 ### 8.8.Broader Impact and Ethical Considerations.
 
